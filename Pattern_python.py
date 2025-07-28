@@ -197,3 +197,65 @@ output:-
    *
  *
 ****"""
+
+#use for loop
+w = int(input("enter"))
+for i in range(w):
+    for j in range(w,i,-1):
+        print("*",end = "")
+    for k in range(i):
+           print("*",end ="")
+    print()
+"""output:-
+*****
+*****
+*****
+*****
+*****
+"""
+# second patterm
+x  = 5 
+for i in range(x):
+    for j in range(x):
+        if(j==1 or j==2 or j==3 ) and (i==1):
+            print(" ",end ="")
+        elif(j==1 or j==2 or j==3) and (i==2):
+            print( " ",end= "")
+        elif(j==1 or j==2 or j==3) and (i==3):
+            print( " ",end= "")
+        else:
+            print("*",end=" ")
+    print()
+"""output:-
+* * * * * 
+*    * 
+*    * 
+*    * 
+* * * * * 
+"""
+#pattern program
+x  = int(input("enter your row"))
+m =1
+for i in range(x):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+"""output:-
+1
+12
+123
+1234"""
+
+#program
+x  = int(input("enter your row"))
+for i in range(x):
+    for j in range(i+1):
+        for k in range(x,i,-1):
+            print( " * ",end="")
+    print()
+  """output:-
+*  *  *  *  * 
+ *  *  *  *  *  *  *  * 
+ *  *  *  *  *  *  *  *  * 
+ *  *  *  *  *  *  *  * 
+ *  *  *  *  * """  
